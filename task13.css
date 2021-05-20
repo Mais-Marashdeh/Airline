@@ -1,0 +1,321 @@
+body,*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	
+
+}
+body{
+	position: relative;
+}
+
+
+body::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f1d8d3;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #f9881e;
+}
+
+header {
+	background-color: #1297ab;
+	display: flex;
+	height: 100px;
+	box-shadow: 10px 15px 20px #222;
+	
+
+}
+
+header .logo {
+	margin-left: 1%;
+	width: 15%;
+	height: 100%;
+}
+header .logo img {
+	width: 80%;
+	height: 120%;
+}
+
+header .navbar{
+	width: 45%;
+	padding-left: 3%;
+	padding-right: 3%;
+
+}
+header .navbar .nav-list{
+	display: flex;
+	list-style: none;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px;
+}
+
+header .navbar .nav-list li a{
+	text-decoration: none;
+	font-size: 18px;
+	color: #f1d8d3;
+
+
+}
+header .navbar .nav-list li a:hover{
+	color: #f9881e;
+}
+
+header .part-3{
+	width: 45%;
+	display: flex;
+	
+
+}
+header .part-3 .serarch{
+	 width: 80%;
+	 height: 100%;
+	 position: relative;
+	
+	
+}
+header .part-3 .serarch input{
+	padding: 0px;
+	height: 30px;
+	width: 0px;
+	position: absolute;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	top: 50%;
+	left: 90%;
+	transform: translate(-90%,-50%);
+	transition-duration: 1s;
+	opacity: 0;
+	
+}
+header .part-3 .serarch span{
+	position: absolute;
+	display: inline-block;
+	height: 35px;
+	width: 35px;
+	background-color: #1297ab;
+	padding: 0px;
+	margin: 0px;
+	font-size: 27px;
+	border-radius: 50%;
+	padding-top: 5px;
+	top: 50%;
+	left: 100%;
+	transform: translate(-100%,-50%);
+	text-align: center;
+	color: #f9881e;
+
+}
+header .part-3 .serarch span i {
+	cursor: pointer;
+}
+header .part-3 .serarch:hover input {
+	width: 200px;
+	opacity: 1;
+	padding-left: 10px;
+}
+
+.dark-light {
+	margin-top: 40px;
+	margin-left: 20px;	
+	font-size: 18px;
+}
+.dark-light a{
+	text-decoration: none;
+	color: #f1d8d3;
+}
+.dark-light a:hover{
+	color: #f9881e;
+}
+
+video {
+	height: 85vh;
+	width: 100%;
+	object-fit: cover;
+	opacity: 0.8;
+
+}
+
+
+
+.cards-container{
+	box-shadow: inset 0px 10px 30px #777,
+				inset 0px -20px 30px #000	;
+	margin-top: -4px;
+	width: 100%;
+	height: 800px;
+	background-color: #333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 100px;
+	background-image: url(img/11.png);
+	background-repeat: no-repeat;
+	 background-position: center top;
+	 background-size: cover;
+}
+
+.cards-container .card{
+	position: relative;
+    width: 20.3%;
+    height: 400px;
+    margin-right: 50px;
+    margin-left: 50px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+   
+
+
+}
+
+.cards-container .card .content{
+	filter: blur(5px;);
+	
+}
+.cards-container .card img {
+	width: 100%;
+	height:250px;
+}
+
+.cards-container .card h2{
+
+}
+.cards-container .card p{
+	text-align: center;
+	margin-top: 20px;
+}
+
+
+
+
+
+
+.audio-container {
+	position: relative;
+}
+
+
+.audio-container audio{
+	position: absolute;
+	bottom: 100px;
+	left:40%;
+}
+
+/* audio-imgs*/
+.audio-imgs{
+	width: 100%;
+	height: 600px;
+	overflow: hidden;
+	
+}
+
+.audio-imgs img {
+	animation: effect 15s linear infinite ;
+	overflow: hidden;
+	
+}
+
+@keyframes effect {
+	0%{ transform: scale(1);	}
+	50%{transform: scale(1.2);}
+	100%{transform: scale(1);}
+}
+
+
+
+
+
+
+
+
+/* start scroll section */
+.scroll {
+	height: 100vh;
+	background-color: #333;
+	position: relative;
+	overflow: hidden;
+	box-shadow: inset 10px 10px 20px #777;
+
+}
+
+.scroll h4 {
+	
+	color: #e6e7e9;
+	font-size: 35px;
+	letter-spacing: 2px;
+}
+
+.scroll h4 span{
+	font-family:'Dancing Script', cursive;
+	color: #f9881e;
+	text-transform: uppercase;
+}
+.scroll .buldings {
+	position: absolute;
+	width: 600px;
+	top: 58%;
+	left: 700px;
+	
+}
+.scroll .right {
+	position: absolute;
+	width: 580px;
+	top: 5%;
+	left: 50px;
+	line-height: 40px;
+}
+.plane{
+	position: absolute;
+	top: 80%;
+	left: 1%;
+	height: 100px;
+}
+
+
+
+
+
+
+footer {
+	
+	position:relative;
+	width: 100%;
+	height: 500px;
+	background-color: #1297ab;
+	bottom: 0px;
+
+}
+
+footer h2 {
+	padding-top: 30px;
+	text-align: center;
+	color: #333;
+	font-size: 30px;
+}
+footer iframe{
+	position: relative;
+	top: 50px;
+	left: 30%;
+	height: 300px;
+	width: 600px;
+}
+footer span {
+	position: absolute;
+	bottom: 20px;
+	left: 450px;
+	color: #f1d8d3;
+}
